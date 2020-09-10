@@ -13,6 +13,22 @@
 #include <map>
 #include <algorithm>
 #include <iostream>
+#include <cmath>
+
+class Region {
+    public:
+        Region(int cityCount, std::vector<std::string> allPoints);
+        Region() {}
+        ~Region() {}
+        void FitnessCount(std::map<std::string, std::pair<int, int>> mapPosition);
+        float Distance(std::pair<int, int> city1, std::pair<int, int> city2);
+
+        float _Fitness;
+        std::vector<std::string> _order;
+
+    private:
+
+};
 
 class City {
     public:
@@ -34,21 +50,6 @@ class City {
         int _cityCount;
         int _population;
         int _mutation = 20;
-
-};
-
-class Region {
-    public:
-        Region(int cityCount, std::vector<std::string> allPoints);
-        Region();
-        ~Region() {}
-        void FitnessCount(std::map<std::string, std::pair<int, int>> mapPosition);
-        int Distance(std::pair<int, int> city1, std::pair<int, int> city2);
-
-        float _Fitness;
-        std::vector<std::string> _order;
-
-    private:
 
 };
 

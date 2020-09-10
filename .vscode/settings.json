@@ -27,6 +27,7 @@
         "xtree": "cpp",
         "xutility": "cpp",
         "algorithm": "cpp",
-        "iostream": "cpp"
+        "iostream": "cpp",
+        "cmath": "cpp"
     }
 }
